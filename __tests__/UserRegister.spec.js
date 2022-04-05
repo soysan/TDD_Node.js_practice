@@ -1,7 +1,9 @@
 const request = require('supertest');
 const app = require('../src/app');
 
+// describeでテストをまとめる。クラスのようなもの
 describe('User Registration', () => {
+  // itでfuncのようにテストを宣言 (説明, 関数, 時間)
   it('returns 200 OK when signup request is valid', (done) => {
     request(app)
       .post('/api/1.0/users')
@@ -10,6 +12,7 @@ describe('User Registration', () => {
         email: 'user1@mail.com',
         password: 'P4ssword',
       })
+      // asyncテストはthenを使う
       .then((response) => {
         expect(response.status).toBe(200);
         done();
