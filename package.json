@@ -11,6 +11,7 @@
   "author": "Masayuki Yamaguchi <stout22.dark@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "express": "^4.17.3",
     "sequelize": "^6.18.0",
     "sqlite3": "^5.0.2"
@@ -26,7 +27,7 @@
   },
   "eslintConfig": {
     "parserOptions": {
-      "ecmaVersion": 6
+      "ecmaVersion": 2018
     },
     "extends": [
       "eslint:recommended",
