@@ -8,7 +8,11 @@ const save = async (body) => {
   await User.create(user);
 };
 
-module.exports = { save };
+const findByEmail = async (email) => {
+  return await User.findOne({ where: { email: email } });
+};
+
+module.exports = { save, findByEmail };
 
 // sugar syntax
 // const user = Object.assign({}, req.body, { password: hash });
