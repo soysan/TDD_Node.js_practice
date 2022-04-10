@@ -8,14 +8,14 @@ class User extends Model {}
 User.init(
   {
     username: {
-      type: Sequelize.STRING
+      type: Sequelize.STRING,
     },
     email: {
-      type: Sequelize.STRING
+      type: Sequelize.STRING,
     },
     password: {
-      type: Sequelize.STRING
-    }
+      type: Sequelize.STRING,
+    },
   },
   {
     sequelize,
