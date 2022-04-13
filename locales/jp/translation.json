@@ -1,0 +1,11 @@
+{
+  "username_null": "ユーザーネームを入力してください",
+  "username_size": "４文字以上３２文字以下で入力してください",
+  "email_null": "メールアドレスを入力してください",
+  "email_invalid": "このメースアドレスは使用できません",
+  "password_null": "パスワードを入力してください",
+  "password_size": "パスワードは６文字以上で入力してください",
+  "password_pattern": "パスワードは最低１つ以上大文字、小文字、数字を含めてください",
+  "email_inuse": "このメールアドレスは使用されています",
+  "user_create_success": "ユーザーは正常に生成されました"
+}
